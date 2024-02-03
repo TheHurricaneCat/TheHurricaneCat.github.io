@@ -1,0 +1,11 @@
+footer {
+    text-align: left;
+    padding: 3px;
+    background-color: #E6E3E2;
+  }
+  
+footer div  {
+    text-align: justify;
+    margin-right: 15px;
+    margin-left: 15px;
+  }

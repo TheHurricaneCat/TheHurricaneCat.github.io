@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DRiP Cafe Customer Feedback</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="navigation_style.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<style>
+
+footer table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 20px;
+              margin-left: 0px;
+              margin-right: 70px;
+              text-decoration: none;
+            }
+
+            footer table a {
+                color: rgb(0, 0, 0);
+            }
+        
+            footer th, footer td {
+              border: 0px;
+              padding: 12px;
+              font-size: 13px;
+              text-align: center;
+            }
+        
+            footer th {
+              background-color: #E6E3E2;
+            }
+        
+            footer .backToTop {
+              text-align: left;
+              font-size: 10px;
+              margin-left: 51px;
+              margin-right: 50px;
+              
+            }
+
+            .backToTop a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
+
+      .title {
+        text-align: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+       
+      }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group input[type="text"] {
+            width: 38%;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .rating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+    }
+    .rating input {
+        display: none;
+    }
+    .rating label {
+        cursor: pointer;
+        background-image: url('coffee3.png'); 
+        background-size: contain;
+        width: 30px; 
+        height: 30px;
+        transition: background 0.5s ease-in-out;
+        margin-right: 10px;
+    }
+    .rating input:checked ~ label {
+        background-image: url('coffee2.png'); 
+        
+    }
+
+    .food_rating {
+      margin-right: 30px;
+    }
+
+    
+        
+</style>
+</head>
+
+<body>
+  <a id="top"></a>
+
+<div class="topnav" id="myTopnav">
+    <div class="logo"><img src="Logo.jpg"/></div>
+    <div class="menu">
+    <a href="index.html">HOME</a>
+    
+    <div class="dropdown">
+      <button class="dropbtn">MENU
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="coffeeProds.html">COFFEE PRODUCTS</a>
+          <a href="nonCoffeeProducts.html">NON-COFFEE PRODUCTS</a>
+          <a href="frappuccino.html">FRAPPUCCINO</a>
+          <a href="foodProducts.html">FOOD PRODUCTS</a>
+      </div>
+    </div> 
+  
+    <div class="dropdown">
+      <button class="dropbtn">REVIEWS
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="GrabReviews.html">GRAB REVIEWS</a>
+          <a href="FacebookReviews.html">FACEBOOK REVIEWS</a>
+          <a href="AddReview.html">ADD YOUR REVIEW HERE</a>
+      </div>
+    </div> 
+  
+    <div class="dropdown">
+      <button class="dropbtn">ABOUT US
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="about us.HTML">HISTORY</a>
+        <a href="mission.html">MISSION</a>
+        <a href="vission.html">VISION</a>
+        <a href="bm.html">BRANCH MAP</a>
+      </div>
+    </div> 
+  
+    <a href="contact.html">CONTACT US</a>
+  
+    <div class="dropdown">
+      <button class="dropbtn">SUPPORT
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="Services.html">SERVICES</a>
+          <a href="CustomerFeedback.html">CUSTOMER FEEDBACK</a>
+      </div>
+    </div> 
+  
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+
+  
+<br /> <br />
+    <div class="title">
+    <h1>Drip Cafe Feedback Forms</h1>
+    <h3>Thank you for choosing Drip Cafe! We value your feedback to help<br> us enhance your experience. Please take a few moments to share your thoughts.</h3>
+    </div>
+<div class="container">
+    <form action="#" method="post">
+      <form action="#" method="post">
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <form action="#" method="post">
+              
+              
+              
+          
+
+
+              <label for="email">Email:</label>
+          <input type="text" id="email" name="email">
+          
+      
+        
+        <label for="visit">Date of Visit:</label>
+        <input type="date" id="visit" name="visit" required>
+
+        <form action="#" method="post">
+          <p>
+              <label for="food_rating">Food Rating:</label>
+              <div class="rating" id="food_rating">
+                  <input type="radio" id="food_rating_5" name="food_rating" value="5">
+                  <label for="food_rating_5" onclick="handleClick('food_rating', 5)"></label>
+                  <input type="radio" id="food_rating_4" name="food_rating" value="4">
+                  <label for="food_rating_4" onclick="handleClick('food_rating', 4)"></label>
+                  <input type="radio" id="food_rating_3" name="food_rating" value="3">
+                  <label for="food_rating_3" onclick="handleClick('food_rating', 3)"></label>
+                  <input type="radio" id="food_rating_2" name="food_rating" value="2">
+                  <label for="food_rating_2" onclick="handleClick('food_rating', 2)"></label>
+                  <input type="radio" id="food_rating_1" name="food_rating" value="1">
+                  <label for="food_rating_1" onclick="handleClick('food_rating', 1)"></label>
+              </div>
+          </p>
+          <p>
+              <label for="place_rating">Place Rating:</label>
+              <div class="rating" id="place_rating">
+                  <input type="radio" id="place_rating_5" name="place_rating" value="5">
+                  <label for="place_rating_5" onclick="handleClick('place_rating', 5)"></label>
+                  <input type="radio" id="place_rating_4" name="place_rating" value="4">
+                  <label for="place_rating_4" onclick="handleClick('place_rating', 4)"></label>
+                  <input type="radio" id="place_rating_3" name="place_rating" value="3">
+                  <label for="place_rating_3" onclick="handleClick('place_rating', 3)"></label>
+                  <input type="radio" id="place_rating_2" name="place_rating" value="2">
+                  <label for="place_rating_2" onclick="handleClick('place_rating', 2)"></label>
+                  <input type="radio" id="place_rating_1" name="place_rating" value="1">
+                  <label for="place_rating_1" onclick="handleClick('place_rating', 1)"></label>
+              </div>
+          </p>
+          <p>
+              <label for="service_rating">Service Rating:</label>
+              <div class="rating" id="service_rating">
+                  <input type="radio" id="service_rating_5" name="service_rating" value="5">
+                  <label for="service_rating_5" onclick="handleClick('service_rating', 5)"></label>
+                  <input type="radio" id="service_rating_4" name="service_rating" value="4">
+                  <label for="service_rating_4" onclick="handleClick('service_rating', 4)"></label>
+                  <input type="radio" id="service_rating_3" name="service_rating" value="3">
+                  <label for="service_rating_3" onclick="handleClick('service_rating', 3)"></label>
+                  <input type="radio" id="service_rating_2" name="service_rating" value="2">
+                  <label for="service_rating_2" onclick="handleClick('service_rating', 2)"></label>
+                  <input type="radio" id="service_rating_1" name="service_rating" value="1">
+                  <label for="service_rating_1" onclick="handleClick('service_rating', 1)"></label>
+              </div>
+          </p>
+          <p>
+              
+        
+        
+        
+        <label for="feedback">What can we do to Improve?:</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+        
+        <input type="submit" value="Submit Feedback">
+    </form>
+              
+              
+          </form>
+        </div>
+        
+        
+          
+
+<br /> <br />
+
+<script>
+  function handleClick(ratingType, value) {
+        const rating = document.getElementById(ratingType);
+        const inputs = rating.getElementsByTagName('input');
+        for (let i = 0; i < inputs.length; i++) {
+            if (inputs[i].value <= value) {
+                inputs[i].checked = true;
+            } else {
+                inputs[i].checked = false;
+            }
+        }
+    }
+</script>
+
+
+<footer style="background-color: #E6E3E2;">
+  <br />
+  <br />
+
+  <p class="backToTop" style="text-decoration: none; margin-left:35px;"> <a href="#top"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BACK TO TOP </a> </p>
+
+  <table>
+    
+    <table>
+      
+      <tr>
+
+        <th><b><u> HOME </u></b></th>
+        <th><b><u> MENU </u></b></th>
+        <th><b><u> REVIEWS </u></b></th>
+        <th><b><u> ABOUT US </u></b></th>
+        <th><b><u> CONTACT US </u></b></th>
+        <th><b><u> SUPPORT </u></b></th>
+        
+      </tr>
+      
+      <tr>
+
+        <td> <a href="index.html" style="text-decoration: none;"> HOME PAGE </a> </td>
+        <td> <a href="coffeeProds.html" style="text-decoration: none;"> COFFEE PRODUCTS </a> </td>
+        <td> <a href="GrabReviews.html" style="text-decoration: none;"> GRAB REVIEWS </a> </td>
+        <td> <a href="about us.HTML" style="text-decoration: none;"> HISTORY </a> </td>
+        <td> <a href="contact.html" style="text-decoration: none;"> INFORMATION </a> </td>
+        <td> <a href="Services.html" style="text-decoration: none;"> SERVICES </a></td>
+
+      </tr>
+
+      <tr>
+
+        <td>  </td>
+        <td> <a href="nonCoffeeProducts.html" style="text-decoration: none;"> NON-COFFEE PRODUCTS </a> </td>
+        <td> <a href="FacebookReviews.html" style="text-decoration: none;"> FACEBOOK REVIEWS </a> </td>
+        <td> <a href="mission.html" style="text-decoration: none;"> MISSION </a> </td>
+        <td>  </td>
+        <td> <a href="CustomerFeedback.html" style="text-decoration: none;"> CUSTOMER FEEDBACK </a> </td>
+        
+      </tr>
+
+      <tr>
+
+        <td>  </td>
+        <td> <a href="frappuccino.html" style="text-decoration: none;"> FRAPPUCCINO </a> </td>
+        <td> <a href="AddReview.html" style="text-decoration: none;"> ADD REVIEW </a> </td>
+        <td> <a href="vission.html" style="text-decoration: none;"> VISION </a> </td>
+        <td>  </td>
+        <td>  </td>
+        
+      </tr>
+
+      <tr>
+
+        <td>  </td>
+        <td> <a href="foodProducts.html" style="text-decoration: none;"> FOOD PRODUCTS </a> </td>
+        <td>  </td>
+        <td> <a href="bm.html" style="text-decoration: none;">  BRANCH MAP </a> </td>
+        <td>  </td>
+        <td>  </td>
+        
+      </tr>
+      
+
+    </table>
+
+    <br />
+    <br />
+
+    <h21 style="font-family: Montserrat; font-size: 18px; margin-left: 32px;">DRiP CAFE: A Coffee Shop by Cyprian Garpida & Theo Soliman </h21>
+  
+    <div><p style="font-family: sans-serif; font-size: 14px; margin-left: 32px;">
+        © 2024 DRIP CAFE. All rights reserved. The content, images, and materials on this website are protected by copyright
+        law and may not be reproduced, distributed, transmitted, displayed, published, or broadcast without the prior written permission of DRIP CAFE. Unauthorized use or reproduction of any part of this website may violate copyright, trademark,
+        and other applicable laws.
+    </p></div>
+
+    <div><p style="font-family: sans-serif; font-size: 10px; margin-left: 32px;">
+      WEB DEVELOPERS:
+    </p></div>
+
+    <div><p style="font-family: sans-serif; font-size: 9px; margin-left: 32px;">
+      BALUYOT II &nbsp; BAUTISTA C. &nbsp; BAUTISTA K. &nbsp; DRILON &nbsp; GARPIDA &nbsp; GILLEGO &nbsp; MORALES 
+    </p></div>
+
+    <br />
+    <br />
+
+  <br />
+  <br />
+  <style>
+
+      footer table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 70px;
+        text-decoration: none;
+      }
+
+      footer table a {
+          color: rgb(0, 0, 0);
+      }
+  
+      footer th, footer td {
+        border: 0px;
+        padding: 12px;
+        font-size: 13px;
+        text-align: center;
+      }
+  
+      footer th {
+        background-color: #E6E3E2;
+      }
+  
+      footer .backToTop {
+        text-align: left;
+        font-size: 10px;
+        margin-left: 51px;
+        margin-right: 50px;
+        
+      }
+
+      .backToTop a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+      }
+  
+  </style>
+</footer>>
+
+<script>
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  
+    </script>
+  
+
+  </body>
+  </html>

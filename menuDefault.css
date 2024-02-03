@@ -1,0 +1,245 @@
+
+.category {
+    padding-left: 110px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.subCategory {
+    padding: 5px;
+}
+
+h1 {
+    color: #72472E;
+    font-family: montserrat;
+    font-size: 50px;
+    line-height: 60%;
+}
+/* Page Header */
+span.lowerTitle {
+    color: #000000;
+    font-size: 25px;
+}
+span.emphasis {
+    color: #19B268;
+    font-size: 25px;
+}
+
+/* Product Selection */
+
+.productSelection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f4f4f4;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+
+.productSelection table {
+    background-color: #ffffff;
+    width: 300px;
+}
+
+/* Individual Item Slice */
+.selectItem {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid#72472E;
+    transition: .5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selectItem:hover {
+    transform: translateY(-3%);
+    box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .5s;
+}
+
+.status {
+    background-color: #19B268;
+    font-size: 20px;
+}
+
+.imgContainer {
+    max-width: 100%;
+    height: 200px;
+}
+
+img.prodImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgPrompt {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textPrompt {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.imgContainer:hover .imgPrompt {
+    opacity: 1;
+}
+
+.name {
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.price {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.overview {
+    height: 120px;
+    text-align: center;
+}
+
+.overview a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #72472E;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin-top: 5%;
+    transition: .5s;
+}
+
+.overview a:hover {
+    background-color: #000000;
+    transition: .5s;
+}
+
+@media (max-width: 720px) {
+    .productSelection table {
+        background-color: #ffffff;
+        width: 400px;
+    }
+
+    .imgContainer {
+        max-width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .category {
+        padding-left: 0px;
+    }
+
+    .category h1 {
+        font-size: 40px;
+    }
+    h1 {
+        color: #72472E;
+        font-family: montserrat;
+        font-size: 50px;
+        line-height: 90%;  
+    }
+
+    span.lowerTitle {
+        line-height: 50%; 
+        font-size: 15px; 
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* CSS Setting for Pop-up Images */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover, .imgContainer:hover img {
+    opacity: 0.2;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+@keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+}
+  
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  

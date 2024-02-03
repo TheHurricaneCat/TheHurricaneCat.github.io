@@ -1,0 +1,39 @@
+
+      #content-container{  /*starting css ng contecnt */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid #72472e;
+        border-top:  2px solid #72472e;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: 6%;
+        text-align: justify;
+      }
+      .garps2 {
+        
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 300%;
+        position: relative;
+       
+    
+      }
+      
+      .garps{
+    
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing:auto;
+        font-style: normal;
+        font-size: 120%;
+        line-height: 2;
+        padding: 20px;
+        
+      }
+    
+    
+      
